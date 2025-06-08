@@ -12,7 +12,7 @@ import streamlit as st
 import ee
 import geemap.foliumap as geemap
 import geemap.colormaps as cm
-
+import json
 from datetime import datetime, timedelta,timezone
 import pytz
 import folium
@@ -31,7 +31,14 @@ ist = pytz.timezone('Asia/Kolkata')
 
 #ee.Authenticate()
 # Initialize Earth Engine
-ee.Initialize() #project="ee-pkvineethkrishnan")
+#ee.Initialize(project="ee-pkvineethkrishnan")
+credentials = ee.ServiceAccountCredentials(
+    st.secrets["GEE"]["client_email"],
+    key_data=json.loads(json.dumps(st.secrets["GEE"]))
+)
+
+# Initialize Earth Engine
+ee.Initialize(credentials)
 ##########################################################################################################################################################
 def apply_spatial_smoothing(image, radius=3):
     kernel = ee.Kernel.square(radius=radius, units='pixels')
