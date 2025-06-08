@@ -33,13 +33,14 @@ ist = pytz.timezone('Asia/Kolkata')
 # Initialize Earth Engine
 #ee.Initialize(project="ee-pkvineethkrishnan")
 
-key_data = dict(st.secrets["GEE"])  
-json_str = json.dumps(key_data)
+#key_data = dict(st.secrets["GEE"])  
+#json_str = json.dumps(key_data)
+
+key_dict = json.loads(json.dumps(dict(st.secrets["GEE"])))
 
 credentials = ee.ServiceAccountCredentials(
     st.secrets["GEE"]["client_email"],
-    key_data=dict(st.secrets["GEE"])  
-)
+    key_data=key_dict)  
 
 # Initialize Earth Engine
 ee.Initialize(credentials)
