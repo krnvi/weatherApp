@@ -31,7 +31,7 @@ ist = pytz.timezone('Asia/Kolkata')
 
 #ee.Authenticate()
 # Initialize Earth Engine
-#ee.Initialize(project="ee-pkvineethkrishnan")
+ee.Initialize() #project="ee-pkvineethkrishnan")
 ##########################################################################################################################################################
 def apply_spatial_smoothing(image, radius=3):
     kernel = ee.Kernel.square(radius=radius, units='pixels')
