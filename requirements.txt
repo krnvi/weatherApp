@@ -1,0 +1,13 @@
+matplotlib
+setuptools
+earthengine-api
+streamlit
+geemap
+datetime
+pytz
+calendar
+pandas
+streamlit-browser-session-storage
+streamlit-browser-storage
+streamlit-local-storage
+streamlit-screen-stats
