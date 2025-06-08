@@ -2,7 +2,6 @@ matplotlib
 setuptools
 earthengine-api
 streamlit
-json
 geemap
 pytz
 pandas
