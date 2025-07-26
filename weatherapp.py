@@ -68,7 +68,8 @@ def floor_to_previous_block(current_hour):
         return 0  # Fallback  
     
 ##########################################################################################################################################################
-bounds=[70, 00, 90, 20]
+#bounds=[70, 00, 90, 20]
+bounds=[60, 00, 100, 40]
 region = ee.Geometry.Rectangle(bounds)
 
 kerala_geometry = ee.FeatureCollection("FAO/GAUL/2015/level1") \
