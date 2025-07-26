@@ -339,7 +339,8 @@ if param == "Temperature":
                 
     vis = {"min": 0, "max": 40, "palette": cmap }
            #["blue", "green", "yellow", "red"]}
-    layer = image_tmp.clip(kerala_geometry).visualize(**vis)
+    #layer = image_tmp.clip(kerala_geometry).visualize(**vis)
+    layer = image_tmp.visualize(**vis)
     lbl='deg C'
     
 elif param=='Rainfall':
@@ -359,7 +360,8 @@ elif param=='Rainfall':
     #              'darkred','lightskyblue','deepskyblue','royalblue','blue']
     #vis_params = {'min': 0, 'max': len(palette) - 1, 'palette': palette}
     
-    layer = image_mm.clip(kerala_geometry).visualize(**vis)
+    #layer = image_mm.clip(kerala_geometry).visualize(**vis)
+    layer = image_mm.visualize(**vis)
     #layer = discrete_img.clip(kerala_geometry).visualize(**vis_params)
     
     lbl='mm'
@@ -368,16 +370,16 @@ layer_title = f"{param} @ {selected_ist_label}" #f"{param} @ {forecast_date.strf
 
 
 m = geemap.Map() #basemap='ROADMAP') #center=[10, 77.5], zoom=7)
-m.centerObject(kerala_geometry, 7)
+m.centerObject(kerala_geometry, 6)
 
 # Fit the map to this region
 #m.fit_bounds(bounds)
 
 # Restrict panning outside the bounds
-m.options['maxBounds'] = bounds
+#m.options['maxBounds'] = bounds
 
 # Optional: Set minimum and maximum zoom levels
-m.options['minZoom'] = 6
+m.options['minZoom'] = 3
 m.options['maxZoom'] = 15
 
 m.addLayer(kerala_geometry,{'color': 'black', 'fillColor': '00000000'}, "Kerala")
