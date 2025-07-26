@@ -128,17 +128,13 @@ st.markdown(
             margin: 0 !important;
          }
         
-        /* Sidebar width */
+        /* Set sidebar background and allow resizing */
         section[data-testid="stSidebar"] {
-            width: 2px !important;
-
-        }
-
-        /* Sidebar background color */
-        section[data-testid="stSidebar"] > div:first-child {
-            background-color: #ADD8B7;
-            padding-left: 5px !important;
-            padding-right: 5px !import
+            background-color: #f0f8ff !important;
+            min-width: 80px !important;
+            max-width: 300px !important;
+            overflow-x: hidden !important;
+                    
         }
 
         /* Sidebar text styling */
