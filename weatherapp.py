@@ -123,12 +123,7 @@ st.markdown(
             background-color: transparent !important;
             }
 
-        /* Remove spacing around components */
-        .element-container {
-            padding: 0 !important;
-            margin: 0 !important;
-         }
-        
+
         /* Sidebar width */
         section[data-testid="stSidebar"] {
             width: 10px !important;
