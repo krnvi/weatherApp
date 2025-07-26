@@ -80,7 +80,7 @@ kerala_geometry = ee.FeatureCollection("FAO/GAUL/2015/level1") \
 ##########################################################################################################################################################
 st.set_page_config(
     page_title="Vweather",
-    layout="wide",  # Options: "centered" or "wide"
+    layout="centered",  # Options: "centered" or "wide"
     initial_sidebar_state="expanded",
     page_icon="🌧️"
 )
@@ -130,7 +130,7 @@ st.markdown(
         
         /* Sidebar width */
         section[data-testid="stSidebar"] {
-            width: 300px !important;
+            width: 400px !important;
 
         }
 
