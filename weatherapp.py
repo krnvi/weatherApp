@@ -130,14 +130,14 @@ st.markdown(
         
         /* Sidebar width */
         section[data-testid="stSidebar"] {
-            width: 80px !important;
+            width: 10px !important;
 
         }
 
         /* Sidebar background color */
         section[data-testid="stSidebar"] > div:first-child {
                 background-color: #f0f8ff !important;
-                min-width: 80px !important;
+                min-width: 10px !important;
                 max-width: 300px !important;
                 overflow-x: hidden !important;
         }
@@ -178,7 +178,7 @@ st.markdown(
 
         /* Adjust main area when sidebar width changes */
         .main {
-            margin-left: 2px;
+            margin-left: 10px;
         }        
         /* Allow the main content to adapt */
         div.block-container {
