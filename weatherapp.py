@@ -175,7 +175,7 @@ st.markdown(
 
         /* Adjust main area when sidebar width changes */
         .main {
-            margin-left: 310px;
+            margin-left: 100px;
         }        
         
     </style>
