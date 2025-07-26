@@ -130,7 +130,7 @@ st.markdown(
         
         /* Sidebar width */
         section[data-testid="stSidebar"] {
-            width: 400px !important;
+            width: 300px !important;
 
         }
 
@@ -142,7 +142,7 @@ st.markdown(
         /* Sidebar text styling */
         section[data-testid="stSidebar"] * {
             color: #000000;
-            font-size: 16px;
+            font-size: 12px;
         }
         /* Style the date_input background and text color */
         section[data-testid="stSidebar"] input[type="text"] {
