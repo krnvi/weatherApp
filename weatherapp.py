@@ -380,7 +380,7 @@ m.centerObject(kerala_geometry, 6)
 #m.options['maxBounds'] = bounds
 
 # Optional: Set minimum and maximum zoom levels
-m.options['minZoom'] = 3
+m.options['minZoom'] = 1
 m.options['maxZoom'] = 15
 
 m.addLayer(kerala_geometry,{'color': 'black', 'fillColor': '00000000'}, "Kerala")
