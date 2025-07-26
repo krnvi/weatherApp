@@ -96,10 +96,87 @@ st.markdown(
             max-width: 100% !important;
             width: 100% !important;
         }
+        .main {
+            padding: 0 !important;
+            margin-left: 1rem !important;
+            margin-right: 0 !important;
+            height: 100vh; 
+        }
+        .css-1aumxhk {
+            margin-top: 0 !important;
+        }
+                
+        .custom-title {
+            color: #222;
+            font-size: 36px;
+            font-weight: bold;
+            text-align:  center;
+            background-color: #ADD8E6;
+            border-radius: 0px;
+            font-family: 'Segoe UI', sans-serif;
+            margin:0; #auto
+            padding: 0;
+            width: 100%;
+        }
+        /* Optional: Remove white background behind sidebar/main */
+        .css-18e3th9 {
+            background-color: transparent !important;
+            }
 
+
+        /* Sidebar background color */
+        section[data-testid="stSidebar"] > div:first-child {
+                background-color: #f0f8ff !important;
+                min-width: 10px !important;
+                max-width: 300px !important;
+                overflow-x: hidden !important;
+        }
+
+        /* Sidebar text styling */
+        section[data-testid="stSidebar"] * {
+            color: #000000;
+            font-size: 12px;
+        }
+        /* Style the date_input background and text color */
+        section[data-testid="stSidebar"] input[type="text"] {
+        background-color: white !important;
+        color: black !important;
+        }
+
+        section[data-testid="stSidebar"] input[type="date"] {
+            background-color: white !important;
+            color: black !important;
+        }
+        
+        /* Change label color for date input in sidebar */
+        section[data-testid="stSidebar"] label {
+            color: #000000;  
+            font-weight: bold;
+        }
+    
+        /* Force white background on selectbox */
+        div[data-baseweb="select"] > div {
+            background-color: white !important;
+            color: black !important;
+        }
+
+        /* Also style the dropdown menu */
+        div[data-baseweb="select"] div[role="listbox"] {
+            background-color: white !important;
+            color: black !important;
+        }
+
+        /* Adjust main area when sidebar width changes */
+        .main {
+            margin-left: 10px;
+        }        
+        /* Allow the main content to adapt */
+        div.block-container {
+            padding-left: 1rem !important;
+        }
         
     </style>
-    <h1 class="custom-title">🌧️ Weather wise</h1>
+    <h1 class="custom-title">🌧️ Weather wiseee</h1>
     """,
     unsafe_allow_html=True,
 )
