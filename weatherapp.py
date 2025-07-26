@@ -124,12 +124,6 @@ st.markdown(
             }
 
 
-        /* Sidebar width */
-        section[data-testid="stSidebar"] {
-            width: 10px !important;
-
-        }
-
         /* Sidebar background color */
         section[data-testid="stSidebar"] > div:first-child {
                 background-color: #f0f8ff !important;
