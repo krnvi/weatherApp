@@ -130,13 +130,16 @@ st.markdown(
         
         /* Sidebar width */
         section[data-testid="stSidebar"] {
-            width: 400px !important;
+            width: 80px !important;
 
         }
 
         /* Sidebar background color */
         section[data-testid="stSidebar"] > div:first-child {
-            background-color: #ADD8E6;
+                background-color: #f0f8ff !important;
+                min-width: 80px !important;
+                max-width: 300px !important;
+                overflow-x: hidden !important;
         }
 
         /* Sidebar text styling */
