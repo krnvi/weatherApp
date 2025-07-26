@@ -41,7 +41,7 @@ ist = pytz.timezone('Asia/Kolkata')
 #credentials = ee.ServiceAccountCredentials(
 #    st.secrets["GEE"]["client_email"],
 #    key_data=key_dict)  
-service_account_info = json.loads(st.secrets["gcp_service_account"])
+service_account_info = st.secrets["gcp_service_account"]
 
 credentials = ee.ServiceAccountCredentials(
     service_account_info["client_email"], key_data=service_account_info
