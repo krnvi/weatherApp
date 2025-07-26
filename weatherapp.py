@@ -98,7 +98,8 @@ st.markdown(
         }
         .main {
             padding: 0 !important;
-            margin: 0 !important;
+            margin-left: 1rem !important;
+            margin-right: 0 !important;
             height: 100vh; 
         }
         .css-1aumxhk {
