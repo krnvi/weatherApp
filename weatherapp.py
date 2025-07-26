@@ -136,7 +136,7 @@ st.markdown(
 
         /* Sidebar background color */
         section[data-testid="stSidebar"] > div:first-child {
-            background-color: #ADD8E6;
+            background-color: #ADD8B7;
             padding-left: 5px !important;
             padding-right: 5px !import
         }
