@@ -92,7 +92,7 @@ st.markdown(
         footer {visibility: hidden;}
         .block-container {
             padding: 0 !important;
-            margin: 0 !important;
+            margin: 5px !important;
             max-width: 100% !important;
             width: 100% !important;
         }
@@ -176,7 +176,7 @@ st.markdown(
         }
         
     </style>
-    <h1 class="custom-title">🌧️ Weather wise </h1>
+    <h1 class="custom-title">🌧️ Weather wise</h1>
     """,
     unsafe_allow_html=True,
 )
