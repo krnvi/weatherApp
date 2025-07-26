@@ -130,7 +130,7 @@ st.markdown(
         
         /* Sidebar width */
         section[data-testid="stSidebar"] {
-            width: 400px !important;
+            width: 100px !important;
 
         }
 
