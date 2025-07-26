@@ -134,7 +134,8 @@ st.markdown(
             min-width: 80px !important;
             max-width: 300px !important;
             overflow-x: hidden !important;
-                    
+            padding-left: 1px !important;
+            padding-right: 1px !import        
         }
 
         /* Sidebar text styling */
@@ -175,6 +176,10 @@ st.markdown(
         .main {
             margin-left: 2px;
         }        
+        /* Allow the main content to adapt */
+        div.block-container {
+            padding-left: 1rem !important;
+        }
         
     </style>
     <h1 class="custom-title">🌧️ Weather wise </h1>
